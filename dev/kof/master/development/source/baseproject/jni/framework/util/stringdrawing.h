@@ -1,0 +1,11 @@
+#pragma once
+
+enum STR_ALIGN
+{
+	S_ALIGN_LEFT = 0,
+	S_ALIGN_CENTER = 1,
+	S_ALIGN_RIGHT = 2,
+	S_ALIGN_TOP = 0,
+	S_ALIGN_MIDDLE = 4,
+	S_ALIGN_BOTTOM = 8,
+};

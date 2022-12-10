@@ -1,0 +1,10 @@
+#pragma once
+
+enum <unnamed-enum-E_TROPHY_CNTUP_NON>
+{
+	E_TROPHY_CNTUP_NON = 0,
+	E_TROPHY_CNTUP_WIN = 1,
+	E_TROPHY_CNTUP_LOSE = 2,
+	E_TROPHY_CNTUP_DRAW = 3,
+	E_TROPHY_CNTUP_NOT_WIN = 4,
+};

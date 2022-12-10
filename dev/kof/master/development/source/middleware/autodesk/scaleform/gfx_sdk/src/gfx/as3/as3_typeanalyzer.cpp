@@ -1,0 +1,5 @@
+
+const Scaleform::GFx::AS3::TR::Type * Scaleform::GFx::AS3::TR::TypeAnalyzer::CalcNodeN(Scaleform::GFx::AS3::TR::NodeN::OP op, const Scaleform::GFx::AS3::TR::Type * rt, Scaleform::GFx::AS3::TR::Def * arg0); // 0x140463AC0
+Scaleform::GFx::AS3::CheckResult Scaleform::GFx::AS3::TR::TypeAnalyzer::CalcNodeExpr1(const Scaleform::GFx::AS3::TR::Type * & result, Scaleform::GFx::AS3::TR::NodeExpr1::OP op, Scaleform::GFx::AS3::TR::Def * arg); // 0x140461DD0
+Scaleform::GFx::AS3::CheckResult Scaleform::GFx::AS3::TR::TypeAnalyzer::CalcNodeExpr2(const Scaleform::GFx::AS3::TR::Type * & result, Scaleform::GFx::AS3::TR::NodeExpr2::OP op, Scaleform::GFx::AS3::TR::Def * a1, Scaleform::GFx::AS3::TR::Def * a2); // 0x140462AB0
+Scaleform::GFx::AS3::CheckResult Scaleform::GFx::AS3::TR::TypeAnalyzer::CalcNodeExpr1CT(const Scaleform::GFx::AS3::TR::Type * & result, Scaleform::GFx::AS3::TR::NodeExpr1CT::OP op, Scaleform::GFx::AS3::TR::Def * d, const Scaleform::GFx::AS3::ClassTraits::Traits * ctr, unsigned long ind); // 0x1404628A0

@@ -1,0 +1,55 @@
+#pragma once
+
+enum Fw::ADDCONTENT_STATUS
+{
+	E_STATUS_CHECKING = 254,
+	E_STATUS_NODATA = 255,
+	E_STATUS_NON_EXTRA = 0,
+	E_STATUS_NOT_START = 1,
+	E_STATUS_DOWNLOADING = 2,
+	E_STATUS_DOWNLOAD_SUSPENDED = 3,
+	E_STATUS_DOWNLOAD_INSTALLED = 4,
+	E_STATUS_COMPLETE = 5,
+};
+enum Fw::ADDCONTENT_ID
+{
+	E_ADDCONTENT_DEFAULT = 0,
+	E_ADDCONTENT_COSTUME_01 = 1,
+	E_ADDCONTENT_COSTUME_02 = 2,
+	E_ADDCONTENT_COSTUME_03 = 3,
+	E_ADDCONTENT_COSTUME_04 = 4,
+	E_ADDCONTENT_COSTUME_05 = 5,
+	E_ADDCONTENT_COSTUME_06 = 6,
+	E_ADDCONTENT_COSTUME_RYO = 7,
+	E_ADDCONTENT_COSTUME_YRI = 8,
+	E_ADDCONTENT_COSTUME_TRY = 9,
+	E_ADDCONTENT_COSTUME_KLA = 10,
+	E_ADDCONTENT_COSTUME_KNG = 11,
+	E_ADDCONTENT_COSTUME_AGL = 12,
+	E_ADDCONTENT_COSTUME_MTK = 13,
+	E_ADDCONTENT_COSTUME_SLV = 14,
+	E_ADDCONTENT_ROC = 15,
+	E_ADDCONTENT_YMZ = 16,
+	E_ADDCONTENT_VNS = 17,
+	E_ADDCONTENT_WHP = 18,
+	E_ADDCONTENT_HDR = 19,
+	E_ADDCONTENT_MRY = 20,
+	E_ADDCONTENT_OSW = 21,
+	E_ADDCONTENT_NJD = 22,
+	E_ADDCONTENT_NUM = 23,
+};
+class Fw::ContentSystem
+{
+public:
+	static bool Startup();
+	static void Shutdown();
+	static long GetParam(long);
+	static void CheckAddContent(bool);
+	static Fw::ADDCONTENT_STATUS GetStatus(Fw::ADDCONTENT_ID);
+	static void CheckFrame();
+	static bool IsUseable(Fw::ADDCONTENT_ID);
+	static const char * GetMountPoint(long);
+	static void SetUseDummyFlag(bool);
+	static void SetDummyExistFlag(Fw::ADDCONTENT_ID, bool);
+	static void SetDummyExistFlagDefault(bool);
+};

@@ -1,0 +1,93 @@
+#pragma once
+
+enum Scaleform::GFx::StatMovieData
+{
+	StatMD_Default = 256,
+	StatMD_Mem = 257,
+	StatMD_CharDefs_Mem = 258,
+	StatMD_ShapeData_Mem = 259,
+	StatMD_Tags_Mem = 260,
+	StatMD_Fonts_Mem = 261,
+	StatMD_Images_Mem = 262,
+	StatMD_ASBinaryData_Mem = 263,
+	StatMD_Other_Mem = 264,
+	StatMD_Time = 265,
+	StatMD_Load_Tks = 266,
+	StatMD_Bind_Tks = 267,
+};
+enum Scaleform::GFx::StatMovieView
+{
+	StatMV_Default = 320,
+	StatMV_Mem = 321,
+	StatMV_MovieClip_Mem = 322,
+	StatMV_ActionScript_Mem = 323,
+	StatMV_ASString_Mem = 324,
+	StatMV_Text_Mem = 325,
+	StatMV_XML_Mem = 326,
+	StatMV_Other_Mem = 327,
+	StatMV_VM = 328,
+	StatMV_VM_VM_Mem = 329,
+	StatMV_VM_CallFrame_Mem = 330,
+	StatMV_VM_VTable_Mem = 331,
+	StatMV_VM_DynAttrHash_Mem = 332,
+	StatMV_VM_SlotInfo_Mem = 333,
+	StatMV_VM_SlotInfoHash_Mem = 334,
+	StatMV_VM_CTraits_Mem = 335,
+	StatMV_VM_Class_Mem = 336,
+	StatMV_VM_ITraits_Mem = 337,
+	StatMV_VM_Instance_Mem = 338,
+	StatMV_VM_AbcFile_Mem = 339,
+	StatMV_VM_AbcConstPool_Mem = 340,
+	StatMV_VM_VMAbcFile_Mem = 341,
+	StatMV_VM_VMAbcFileIntNs_Mem = 342,
+	StatMV_VM_VMAbcFileIntNsSet_Mem = 343,
+	StatMV_VM_VMAbcFileIntStr_Mem = 344,
+	StatMV_VM_VMAbcFileBubble_Mem = 345,
+	StatMV_VM_VMAbcFileMBIArray_Mem = 346,
+	StatMV_VM_VMAbcFileWordCode_Mem = 347,
+	StatMV_VM_Tracer_Mem = 348,
+	StatMV_VM_DebugInfo_Mem = 349,
+	StatMV_Tks = 350,
+	StatMV_Advance_Tks = 351,
+	StatMV_Action_Tks = 352,
+	StatMV_Seek_Tks = 353,
+	StatMV_Timeline_Tks = 354,
+	StatMV_Input_Tks = 355,
+	StatMV_Mouse_Tks = 356,
+	StatMV_ScriptCommunication_Tks = 357,
+	StatMV_GetVariable_Tks = 358,
+	StatMV_SetVariable_Tks = 359,
+	StatMV_Invoke_Tks = 360,
+	StatMV_InvokeAction_Tks = 361,
+	StatMV_Display_Tks = 362,
+	StatMV_FontThrash_Tks = 363,
+	StatMV_GradientGen_Tks = 364,
+	StatMV_FontMiss_Tks = 365,
+	StatMV_Counters = 366,
+	StatMV_Invoke_Cnt = 367,
+	StatMV_MCAdvance_Cnt = 368,
+	StatMV_Tessellate_Cnt = 369,
+};
+enum Scaleform::GFx::StatIME
+{
+	StatIME_Default = 512,
+	StatIME_Mem = 513,
+};
+enum Scaleform::GFx::StatFontCache
+{
+	StatFC_Default = 192,
+	StatFC_Mem = 193,
+	StatFC_Batch_Mem = 194,
+	StatFC_GlyphCache_Mem = 195,
+	StatFC_Other_Mem = 196,
+};
+enum Scaleform::GFx::StatAmp
+{
+	StatAmp_Default = 576,
+	StatAmp_Mem = 577,
+	StatAmp_ProfileFrame = 578,
+	StatAmp_Server = 579,
+	StatAmp_Message = 580,
+	StatAmp_Callstack = 581,
+	StatAmp_InstrBuffer = 582,
+};

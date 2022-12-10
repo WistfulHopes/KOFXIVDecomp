@@ -1,0 +1,14 @@
+#pragma once
+
+Scaleform::AutoPtr<Scaleform::GFx::Text::EditorKit::RestrictParams>::~AutoPtr<Scaleform::GFx::Text::EditorKit::RestrictParams>(); // 0x140429410
+Scaleform::AutoPtr<Scaleform::GFx::AS3::Instances::fl_events::EventDispatcher::EventDispatcherImpl>::~AutoPtr<Scaleform::GFx::AS3::Instances::fl_events::EventDispatcher::EventDispatcherImpl>(); // 0x140556110
+Scaleform::AutoPtr<Scaleform::ArrayPOD<unsigned char,2,Scaleform::ArrayDefaultPolicy> >::~AutoPtr<Scaleform::ArrayPOD<unsigned char,2,Scaleform::ArrayDefaultPolicy> >(); // 0x1404535C0
+Scaleform::AutoPtr<Scaleform::GFx::AS3::VTable>::~AutoPtr<Scaleform::GFx::AS3::VTable>(); // 0x140453630
+Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::WeakPtr<Scaleform::GFx::DisplayObject>,2,Scaleform::ArrayDefaultPolicy> > & Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::WeakPtr<Scaleform::GFx::DisplayObject>,2,Scaleform::ArrayDefaultPolicy> >::operator=(const Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::WeakPtr<Scaleform::GFx::DisplayObject>,2,Scaleform::ArrayDefaultPolicy> > & p); // 0x140456910
+Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::GFx::MovieDataDef::SceneInfo,2,Scaleform::ArrayDefaultPolicy> > & Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::GFx::MovieDataDef::SceneInfo,2,Scaleform::ArrayDefaultPolicy> >::operator=(Scaleform::ArrayLH<Scaleform::GFx::MovieDataDef::SceneInfo,2,Scaleform::ArrayDefaultPolicy> * p); // 0x14033DC30
+Scaleform::AutoPtr<Scaleform::GFx::AS3::Instances::fl_events::EventDispatcher::EventDispatcherImpl> & Scaleform::AutoPtr<Scaleform::GFx::AS3::Instances::fl_events::EventDispatcher::EventDispatcherImpl>::operator=(Scaleform::GFx::AS3::Instances::fl_events::EventDispatcher::EventDispatcherImpl * p); // 0x1405563E0
+Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::GFx::AS3::Instances::fl_sensors::Accelerometer *,2,Scaleform::ArrayDefaultPolicy> > & Scaleform::AutoPtr<Scaleform::ArrayLH<Scaleform::GFx::AS3::Instances::fl_sensors::Accelerometer * __ptr64,2,Scaleform::ArrayDefaultPolicy> >::operator=(Scaleform::ArrayLH<Scaleform::GFx::AS3::Instances::fl_sensors::Accelerometer *,2,Scaleform::ArrayDefaultPolicy> * p); // 0x1404568A0
+Scaleform::AutoPtr<Scaleform::ArrayPOD<unsigned char,2,Scaleform::ArrayDefaultPolicy> > & Scaleform::AutoPtr<Scaleform::ArrayPOD<unsigned char,2,Scaleform::ArrayDefaultPolicy> >::operator=(Scaleform::ArrayPOD<unsigned char,2,Scaleform::ArrayDefaultPolicy> * p); // 0x140456990
+Scaleform::AutoPtr<Scaleform::GFx::AS3::VTable> & Scaleform::AutoPtr<Scaleform::GFx::AS3::VTable>::operator=(Scaleform::GFx::AS3::VTable * p); // 0x140456A00
+void Scaleform::AutoPtr<Scaleform::GFx::Text::EditorKit::RestrictParams>::Reset(Scaleform::GFx::Text::EditorKit::RestrictParams * p, bool owner); // 0x14042C0B0
+void Scaleform::AutoPtr<Scaleform::GFx::AS3::VTable>::Reset(Scaleform::GFx::AS3::VTable * p, bool owner); // 0x1404A3600

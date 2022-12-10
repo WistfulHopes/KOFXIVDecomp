@@ -1,0 +1,684 @@
+#pragma once
+
+struct _PMD
+{
+	long mdisp; // 0x0
+	long pdisp; // 0x4
+	long vdisp; // 0x8
+};
+struct $_TypeDescriptor$_extraBytes_24
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[24]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_28
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[28]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_23
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[23]; // 0x10
+};
+struct _TypeDescriptor
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[0]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_34
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[34]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_29
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[29]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_88
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[88]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_51
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[51]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_19
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[19]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_21
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[21]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_20
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[20]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_56
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[56]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_40
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[40]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_15
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[15]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_13
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[13]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_27
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[27]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_25
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[25]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_92
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[92]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_111
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[111]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_58
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[58]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_43
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[43]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_61
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[61]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_30
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[30]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_46
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[46]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_64
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[64]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_53
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[53]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_74
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[74]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_12
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[12]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_54
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[54]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_71
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[71]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_14
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[14]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_37
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[37]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_66
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[66]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_75
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[75]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_102
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[102]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_76
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[76]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_52
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[52]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_112
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[112]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_49
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[49]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_48
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[48]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_70
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[70]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_41
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[41]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_89
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[89]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_68
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[68]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_87
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[87]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_44
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[44]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_18
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[18]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_47
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[47]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_45
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[45]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_38
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[38]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_65
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[65]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_17
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[17]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_35
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[35]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_22
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[22]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_55
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[55]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_31
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[31]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_32
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[32]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_39
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[39]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_69
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[69]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_33
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[33]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_26
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[26]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_81
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[81]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_77
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[77]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_86
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[86]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_118
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[118]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_16
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[16]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_100
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[100]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_140
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[140]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_80
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[80]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_125
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[125]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_99
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[99]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_124
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[124]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_93
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[93]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_109
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[109]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_95
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[95]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_127
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[127]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_57
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[57]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_59
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[59]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_108
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[108]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_50
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[50]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_72
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[72]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_148
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[148]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_156
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[156]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_268
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[268]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_180
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[180]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_90
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[90]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_257
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[257]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_145
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[145]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_113
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[113]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_422
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[422]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_104
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[104]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_236
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[236]; // 0x10
+};
+struct $_TypeDescriptor$_extraBytes_114
+{
+	const void * pVFTable; // 0x0
+	void * spare; // 0x8
+	char name[114]; // 0x10
+};
+struct _s__CatchableType
+{
+	unsigned long properties; // 0x0
+	_TypeDescriptor * pType; // 0x4
+	_PMD thisDisplacement; // 0xC
+	long sizeOrOffset; // 0x18
+	void(*copyFunction)(void *); // 0x1C
+};
+struct $_s__CatchableTypeArray$_extraBytes_32
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[4]; // 0x4
+};
+struct $_s__CatchableTypeArray$_extraBytes_16
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[2]; // 0x4
+};
+struct $_s__CatchableTypeArray$_extraBytes_40
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[5]; // 0x4
+};
+struct _s__CatchableTypeArray
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[0]; // 0x4
+};
+struct $_s__CatchableTypeArray$_extraBytes_8
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[1]; // 0x4
+};
+struct $_s__CatchableTypeArray$_extraBytes_24
+{
+	long nCatchableTypes; // 0x0
+	const _s__CatchableType * arrayOfCatchableTypes[3]; // 0x4
+};
+struct _s__ThrowInfo
+{
+	unsigned long attributes; // 0x0
+	void(*pmfnUnwind)(void *); // 0x4
+	long(*pForwardCompat)(); // 0xC
+	const _s__CatchableTypeArray * pCatchableTypeArray; // 0x14
+};
+struct _s__RTTIBaseClassDescriptor2
+{
+	_TypeDescriptor * pTypeDescriptor; // 0x0
+	unsigned long numContainedBases; // 0x8
+	_PMD where; // 0xC
+	unsigned long attributes; // 0x18
+	const _s__RTTIClassHierarchyDescriptor * pClassDescriptor; // 0x1C
+};
+struct _s__RTTIBaseClassArray
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[0]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_24
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[3]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_16
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[2]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_8
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[1]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_32
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[4]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_64
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[8]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_48
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[6]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_56
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[7]; // 0x0
+};
+struct $_s__RTTIBaseClassArray$_extraBytes_40
+{
+	const _s__RTTIBaseClassDescriptor2 * arrayOfBaseClassDescriptors[5]; // 0x0
+};
+struct _s__RTTIClassHierarchyDescriptor
+{
+	unsigned long signature; // 0x0
+	unsigned long attributes; // 0x4
+	unsigned long numBaseClasses; // 0x8
+	const _s__RTTIBaseClassArray * pBaseClassArray; // 0xC
+};
+struct _s__RTTICompleteObjectLocator2
+{
+	unsigned long signature; // 0x0
+	unsigned long offset; // 0x4
+	unsigned long cdOffset; // 0x8
+	_TypeDescriptor * pTypeDescriptor; // 0xC
+	const _s__RTTIClassHierarchyDescriptor * pClassDescriptor; // 0x14
+	const _s__RTTICompleteObjectLocator2 * pSelf; // 0x1C
+};
+struct __s_GUID
+{
+	unsigned long Data1; // 0x0
+	unsigned short Data2; // 0x4
+	unsigned short Data3; // 0x6
+	unsigned char Data4[8]; // 0x8
+};
+struct std::integer_sequence<unsigned __int64,0>
+{
+	struct type;
+	typedef unsigned long long value_type;
+	static unsigned long long size();
+};

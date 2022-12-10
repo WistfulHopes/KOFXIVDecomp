@@ -1,0 +1,141 @@
+#pragma once
+
+struct __vc_attributes::helper_attributes::v1_alttypeAttribute
+{
+	enum type_e
+	{
+		eBoolean = 0,
+		eInteger = 1,
+		eFloat = 2,
+		eDouble = 3,
+	};
+	v1_alttypeAttribute(__vc_attributes::helper_attributes::v1_alttypeAttribute::type_e);
+	__vc_attributes::helper_attributes::v1_alttypeAttribute::type_e type; // 0x0
+};
+struct __vc_attributes::helper_attributes::usageAttribute
+{
+	enum usage_e
+	{
+		eAnyUsage = 0,
+		eCoClassUsage = 1,
+		eCOMInterfaceUsage = 2,
+		eInterfaceUsage = 6,
+		eMemberUsage = 8,
+		eMethodUsage = 16,
+		eInterfaceMethodUsage = 32,
+		eInterfaceMemberUsage = 64,
+		eCoClassMemberUsage = 128,
+		eCoClassMethodUsage = 256,
+		eGlobalMethodUsage = 768,
+		eGlobalDataUsage = 1024,
+		eClassUsage = 2048,
+		eInterfaceParameterUsage = 4096,
+		eMethodParameterUsage = 12288,
+		eIDLModuleUsage = 16384,
+		eAnonymousUsage = 32768,
+		eTypedefUsage = 65536,
+		eUnionUsage = 131072,
+		eEnumUsage = 262144,
+		eDefineTagUsage = 524288,
+		eStructUsage = 1048576,
+		eLocalUsage = 2097152,
+		ePropertyUsage = 4194304,
+		eEventUsage = 8388608,
+		eTemplateUsage = 16777216,
+		eModuleUsage = 16777216,
+		eIllegalUsage = 33554432,
+		eAsynchronousUsage = 67108864,
+		eAnyIDLUsage = 4161535,
+	};
+	usageAttribute(unsigned long);
+	unsigned long value; // 0x0
+};
+struct __vc_attributes::event_receiverAttribute
+{
+	enum type_e
+	{
+		native = 0,
+		com = 1,
+		managed = 2,
+	};
+	event_receiverAttribute(__vc_attributes::event_receiverAttribute::type_e, bool);
+	event_receiverAttribute(__vc_attributes::event_receiverAttribute::type_e);
+	event_receiverAttribute();
+	__vc_attributes::event_receiverAttribute::type_e type; // 0x0
+	bool layout_dependent; // 0x4
+};
+struct __vc_attributes::threadingAttribute
+{
+	enum threading_e
+	{
+		apartment = 1,
+		single = 2,
+		free = 3,
+		neutral = 4,
+		both = 5,
+	};
+	threadingAttribute(__vc_attributes::threadingAttribute::threading_e);
+	threadingAttribute();
+	__vc_attributes::threadingAttribute::threading_e value; // 0x0
+};
+struct __vc_attributes::moduleAttribute
+{
+	enum type_e
+	{
+		dll = 1,
+		exe = 2,
+		service = 3,
+		unspecified = 4,
+		EXE = 2,
+		SERVICE = 3,
+	};
+	moduleAttribute(__vc_attributes::moduleAttribute::type_e, const char *, const char *, const char *, long, bool, const char *, long, const char *, const char *, long, bool, bool, const char *, const char *);
+	moduleAttribute(__vc_attributes::moduleAttribute::type_e);
+	moduleAttribute();
+	__vc_attributes::moduleAttribute::type_e type; // 0x0
+	const char * name; // 0x8
+	const char * version; // 0x10
+	const char * uuid; // 0x18
+	long lcid; // 0x20
+	bool control; // 0x24
+	const char * helpstring; // 0x28
+	long helpstringcontext; // 0x30
+	const char * helpstringdll; // 0x38
+	const char * helpfile; // 0x40
+	long helpcontext; // 0x48
+	bool hidden; // 0x4C
+	bool restricted; // 0x4D
+	const char * custom; // 0x50
+	const char * resource_name; // 0x58
+};
+struct __vc_attributes::aggregatableAttribute
+{
+	enum type_e
+	{
+		never = 0,
+		allowed = 1,
+		always = 2,
+	};
+	aggregatableAttribute(__vc_attributes::aggregatableAttribute::type_e);
+	aggregatableAttribute();
+	__vc_attributes::aggregatableAttribute::type_e type; // 0x0
+};
+struct __vc_attributes::event_sourceAttribute
+{
+	enum type_e
+	{
+		native = 0,
+		com = 1,
+		managed = 2,
+	};
+	enum optimize_e
+	{
+		speed = 0,
+		size = 1,
+	};
+	event_sourceAttribute(__vc_attributes::event_sourceAttribute::type_e);
+	event_sourceAttribute();
+	__vc_attributes::event_sourceAttribute::type_e type; // 0x0
+	__vc_attributes::event_sourceAttribute::optimize_e optimize; // 0x4
+	bool decorate; // 0x8
+};
