@@ -4,4 +4,4 @@ A decompilation project for The King of Fighters XIV. The basis was done using h
 ## Contributing
 Contributions are very welcome! Please file issues or submit pull requests.
 
-I recommend grabbing the EXE with the PDB file from debugging.games, which will aid in understanding classes and structs. Note that this download does not include any assets or a cracked executable, so it will be unplayable without owning the Steam version of the game, only aiding in analysis.
+I recommend grabbing the EXE with the PDB file from http://debugging.games/, which will aid in understanding classes and structs. Note that this download does not include any assets or a cracked executable, so it will be unplayable without owning the Steam version of the game, only aiding in analysis.
