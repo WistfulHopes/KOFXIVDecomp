@@ -1,5 +1,10 @@
 #pragma once
 
+#include "../agstring.h"
+#include "../agsingleton.h"
+
+struct AgHttpPlatformData;
+
 struct AgHttpRequest
 {
 	long id; // 0x0

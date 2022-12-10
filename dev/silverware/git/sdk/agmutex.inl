@@ -1,3 +1,5 @@
 #pragma once
 
-AgMutex::~AgMutex(); // 0x14002F9D0
+#include "agmutex.h"
+
+AgMutex::~AgMutex() {} // 0x14002F9D0

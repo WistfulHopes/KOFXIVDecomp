@@ -1,4 +1,5 @@
 #pragma once
+#include "agreferencecount.h"
 
 class AgReferencedObject
 {
@@ -11,4 +12,5 @@ public:
 private:
 	AgReferenceCount * m_refCount; // 0x0
 };
-void AgReferencedObject::dispose<AgLeaderboardRankingList>(AgLeaderboardRankingList * data); // 0x1406833C0
+
+//void AgReferencedObject::dispose<AgLeaderboardRankingList>(AgLeaderboardRankingList * data); // 0x1406833C0

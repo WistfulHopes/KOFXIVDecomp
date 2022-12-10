@@ -1045,3 +1045,4 @@ dkms.conf
 *.dis
 
 ignore/
+.vscode/settings.json

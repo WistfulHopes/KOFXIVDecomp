@@ -2,6 +2,7 @@
 
 class AgLocale
 {
+public:
 	enum SystemLanguage
 	{
 		SystemLanguage_None = 0,
@@ -27,6 +28,5 @@ class AgLocale
 		SystemLanguage_Turkish = 20,
 		SystemLanguage_Dutch = 21,
 	};
-public:
 	static AgLocale::SystemLanguage getCurrentSystemLanguage();
 };

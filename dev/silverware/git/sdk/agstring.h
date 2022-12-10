@@ -1,5 +1,8 @@
 #pragma once
 
+#include "agstringref.h"
+#include <string>
+
 class AgString
 {
 public:
@@ -46,7 +49,6 @@ public:
 	AgString & erase(unsigned long, unsigned long);
 	AgString & replace(AgStringRef, AgStringRef, long);
 	AgString & replace(unsigned long, long, AgStringRef);
-	char & operator[](unsigned long);
 	const char & operator[](unsigned long);
 private:
 	void _allocate(long);
@@ -72,7 +74,7 @@ public:
 	AgStringKey(const AgStringRef &);
 	AgStringKey(const AgString &);
 	AgStringKey(const AgStringKey &);
-	const AgStringRef & operator const class AgStringRef &();
+	operator const class AgStringRef &();
 	bool operator<(const AgStringKey &);
 	bool operator==(const AgStringKey &);
 private:

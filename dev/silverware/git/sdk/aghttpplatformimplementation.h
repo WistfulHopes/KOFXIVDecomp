@@ -1,5 +1,7 @@
 #pragma once
 
+#include "network/aghttp.h"
+
 class AgHttpPlatformImplementation
 {
 public:

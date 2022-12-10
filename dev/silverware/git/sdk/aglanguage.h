@@ -1,5 +1,12 @@
 #pragma once
 
+#include "aglocale.h"
+#include "agpointer.h"
+#include "agreferencedobject.h"
+#include "agstream.h"
+#include "agstring.h"
+#include "agstringref.h"
+
 class AgLanguage :
 	AgReferencedObject
 {

@@ -1,11 +1,18 @@
 #pragma once
 
-enum AgDetail::Win32::Wait
+namespace AgDetail 
 {
-	Wait_Failed = 255,
-	Wait_Object0 = 0,
-	Wait_Abandoned = 128,
-};
+	namespace Win32 
+	{
+		enum Wait
+		{
+			Wait_Failed = 255,
+			Wait_Object0 = 0,
+			Wait_Abandoned = 128,
+		};
+	}
+}
+
 struct AgSemaphoreInternalData
 {
 	volatile long m_aborted; // 0x0

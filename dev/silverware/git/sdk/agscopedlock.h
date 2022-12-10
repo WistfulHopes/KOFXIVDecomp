@@ -1,13 +1,18 @@
 #pragma once
 
-AgScopedLock<AgMutex>::~AgScopedLock<AgMutex>(); // 0x14002F1D0
-class AgScopedLock<void>
+template <typename T>
+class AgScopedLock
 {
 private:
-	AgScopedLock<void>(const AgScopedLock<void> &);
+	AgScopedLock<T>(const AgScopedLock<T> &);
 public:
+	AgScopedLock<T>(const T &);
+	~AgScopedLock<T>();
 	void lock();
 	void unlock();
 private:
-	AgScopedLock<void> & operator=(const AgScopedLock<void> &);
+	AgScopedLock<T> & operator=(const AgScopedLock<T> &);
+public:
+	long m_locked; // 0x0
+	const T & m_lockable; // 0x8
 };

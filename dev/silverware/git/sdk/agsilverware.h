@@ -1,5 +1,8 @@
 #pragma once
 
+#include "agstring.h"
+#include "agclock.h"
+
 class AgSilverware
 {
 public:

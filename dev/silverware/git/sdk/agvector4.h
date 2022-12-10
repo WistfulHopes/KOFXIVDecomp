@@ -1,5 +1,8 @@
 #pragma once
 
+#include "agvector2.h"
+#include "agvector3.h"
+
 class AgVector4
 {
 public:

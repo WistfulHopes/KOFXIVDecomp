@@ -1,5 +1,7 @@
 #pragma once
 
+#include "platforms\pc\system\agpcsysteminfo.h"
+
 struct AgMutexInternalData
 {
 	AgMutexInternalData();
@@ -30,19 +32,4 @@ private:
 	AgMutexInternalData m_data; // 0x0
 public:
 	void __dflt_ctor_closure();
-};
-class AgScopedLock<AgMutex>
-{
-private:
-	AgScopedLock<AgMutex>(const AgScopedLock<AgMutex> &);
-public:
-	AgScopedLock<AgMutex>(const AgMutex &);
-	~AgScopedLock<AgMutex>();
-	void lock();
-	void unlock();
-private:
-	AgScopedLock<AgMutex> & operator=(const AgScopedLock<AgMutex> &);
-public:
-	long m_locked; // 0x0
-	const AgMutex & m_lockable; // 0x8
 };

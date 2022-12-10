@@ -1,77 +1,61 @@
 #pragma once
 
-AgPointer<AgThread>::AgPointer<AgThread>(); // 0x14005DEC0
-AgPointer<AgController>::AgPointer<AgController>(); // 0x14005DEC0
-AgPointer<AgMemoryStream>::AgPointer<AgMemoryStream>(); // 0x14005DEC0
-AgPointer<AgAudioChannel>::AgPointer<AgAudioChannel>(AgAudioChannel * t); // 0x140051130
-AgPointer<AgFile>::AgPointer<AgFile>(AgFile * t); // 0x140051130
-AgPointer<AgController>::AgPointer<AgController>(AgController * t); // 0x140051130
-AgPointer<AgUser>::AgPointer<AgUser>(AgUser * t); // 0x140051130
-AgPointer<AgMount>::AgPointer<AgMount>(AgMount * t); // 0x14066C330
-AgPointer<AgService>::AgPointer<AgService>(AgService * t); // 0x140658DB0
-AgPointer<AgPCStorageMount>::AgPointer<AgPCStorageMount>(AgPCStorageMount * t); // 0x1406996A0
-AgPointer<AgDirectory>::AgPointer<AgDirectory>(AgDirectory * t); // 0x140699730
-AgPointer<AgBuffer<AgAllocator<1> > >::AgPointer<AgBuffer<AgAllocator<1> > >(AgBuffer<AgAllocator<1> > * t); // 0x14069D0C0
-AgPointer<AgStream>::AgPointer<AgStream>(AgStream * t); // 0x14069D150
-AgPointer<AgSteamRemoteMount>::AgPointer<AgSteamRemoteMount>(AgSteamRemoteMount * t); // 0x14069E9E0
-AgPointer<AgLeaderboard>::AgPointer<AgLeaderboard>(AgLeaderboard * t); // 0x140683430
-AgPointer<AgPlayer>::AgPointer<AgPlayer>(AgPlayer * t); // 0x140671960
-AgPointer<AgJsonNodeData>::AgPointer<AgJsonNodeData>(AgJsonNodeData * t); // 0x140692C90
-AgPointer<AgSession>::AgPointer<AgSession>(AgSession * t); // 0x140696300
-AgPointer<AgSharedInstance<AgMutex> >::AgPointer<AgSharedInstance<AgMutex> >(const AgPointer<AgSharedInstance<AgMutex> > & rhs); // 0x140039920
-AgPointer<AgStream>::AgPointer<AgStream><AgMemoryStream>(const AgPointer<AgMemoryStream> & rhs); // 0x140051190
-AgPointer<AgController>::AgPointer<AgController>(const AgPointer<AgController> & rhs); // 0x140051190
-AgPointer<AgMount>::AgPointer<AgMount>(const AgPointer<AgMount> & rhs); // 0x140051190
-AgPointer<AgService>::AgPointer<AgService>(const AgPointer<AgService> & rhs); // 0x140051190
-AgPointer<AgDisplay>::AgPointer<AgDisplay>(const AgPointer<AgDisplay> & rhs); // 0x140051190
-AgPointer<AgMemoryStream>::AgPointer<AgMemoryStream>(const AgPointer<AgMemoryStream> & rhs); // 0x140051190
-AgPointer<AgFile>::AgPointer<AgFile>(const AgPointer<AgFile> & rhs); // 0x140051190
-AgPointer<AgStream>::AgPointer<AgStream>(const AgPointer<AgStream> & rhs); // 0x140051190
-AgPointer<AgJsonNodeData>::AgPointer<AgJsonNodeData>(const AgPointer<AgJsonNodeData> & rhs); // 0x140051190
-AgPointer<AgStandardKeyboardController>::AgPointer<AgStandardKeyboardController>(const AgPointer<AgStandardKeyboardController> & rhs); // 0x140051190
-AgPointer<AgLeaderboard>::AgPointer<AgLeaderboard>(const AgPointer<AgLeaderboard> & rhs); // 0x140051190
-AgPointer<AgDialog>::AgPointer<AgDialog>(const AgPointer<AgDialog> & rhs); // 0x140051190
-AgPointer<AgPlayer>::AgPointer<AgPlayer>(const AgPointer<AgPlayer> & rhs); // 0x140051190
-AgPointer<AgArchive>::AgPointer<AgArchive>(const AgReference<AgArchive> & rhs); // 0x14068E6F0
-AgPointer<AgDirectory>::AgPointer<AgDirectory><AgArchiveDirectory>(const AgPointer<AgArchiveDirectory> & rhs); // 0x140051190
-AgPointer<AgMount>::AgPointer<AgMount><AgArchive>(const AgPointer<AgArchive> & rhs); // 0x140051190
-AgPointer<AgStream>::AgPointer<AgStream><AgFile>(const AgPointer<AgFile> & rhs); // 0x140051190
-AgPointer<AgSaveErrorDialog>::AgPointer<AgSaveErrorDialog><AgDialog>(const AgPointer<AgDialog> & rhs); // 0x140051190
-AgPointer<AgMount>::AgPointer<AgMount><AgPCStorageMount>(const AgPointer<AgPCStorageMount> & rhs); // 0x140051190
-AgPointer<AgController>::AgPointer<AgController><AgStandardKeyboardController>(const AgPointer<AgStandardKeyboardController> & rhs); // 0x140051190
-AgPointer<AgStream>::AgPointer<AgStream><AgBufferStream<AgBuffer<AgAllocator<1> > > >(const AgPointer<AgBufferStream<AgBuffer<AgAllocator<1> > > > & rhs); // 0x140051190
-AgPointer<AgMount>::AgPointer<AgMount><AgSteamRemoteMount>(const AgPointer<AgSteamRemoteMount> & rhs); // 0x140051190
-AgPointer<AgController>::~AgPointer<AgController>(); // 0x14002F6B0
-AgPointer<AgSharedInstance<AgMutex> >::~AgPointer<AgSharedInstance<AgMutex> >(); // 0x1400399A0
-AgPointer<AgAudioChannel>::~AgPointer<AgAudioChannel>(); // 0x14002F6B0
-AgPointer<AgThread>::~AgPointer<AgThread>(); // 0x14002F6B0
-AgPointer<AgFile>::~AgPointer<AgFile>(); // 0x14002F6B0
-AgPointer<AgMoviePlayer>::~AgPointer<AgMoviePlayer>(); // 0x1400977A0
-AgPointer<AgDisplay>::~AgPointer<AgDisplay>(); // 0x14009F4F0
-AgPointer<AgArchive>::~AgPointer<AgArchive>(); // 0x14002F6B0
-AgPointer<KOFApplication>::~AgPointer<KOFApplication>(); // 0x14002F6B0
-AgPointer<AgService>::~AgPointer<AgService>(); // 0x140658030
-AgPointer<AgArchiveDirectory>::~AgPointer<AgArchiveDirectory>(); // 0x14066C680
-AgPointer<AgAsyncStreamReader>::~AgPointer<AgAsyncStreamReader>(); // 0x14066C720
-AgPointer<AgBlowfish>::~AgPointer<AgBlowfish>(); // 0x14066C7C0
-AgPointer<AgAudioEffect>::~AgPointer<AgAudioEffect>(); // 0x14065D340
-AgPointer<AgBuffer<AgAllocator<1> > >::~AgPointer<AgBuffer<AgAllocator<1> > >(); // 0x140661680
-AgPointer<AgDialog>::~AgPointer<AgDialog>(); // 0x140661720
-AgPointer<AgDirectory>::~AgPointer<AgDirectory>(); // 0x1406617C0
-AgPointer<AgSaveErrorDialog>::~AgPointer<AgSaveErrorDialog>(); // 0x140661860
-AgPointer<AgPlayer>::~AgPointer<AgPlayer>(); // 0x14064E560
-AgPointer<AgPCStorageMount>::~AgPointer<AgPCStorageMount>(); // 0x1406997C0
-AgPointer<AgStandardKeyboardController>::~AgPointer<AgStandardKeyboardController>(); // 0x140674FD0
-AgPointer<AgStandardMouseController>::~AgPointer<AgStandardMouseController>(); // 0x140675070
-AgPointer<AgStandardTouchController>::~AgPointer<AgStandardTouchController>(); // 0x140675110
-AgPointer<AgBufferStream<AgBuffer<AgAllocator<1> > > >::~AgPointer<AgBufferStream<AgBuffer<AgAllocator<1> > > >(); // 0x14069D450
-AgPointer<AgSteamRemoteMount>::~AgPointer<AgSteamRemoteMount>(); // 0x14069EA70
-AgPointer<AgLeaderboard>::~AgPointer<AgLeaderboard>(); // 0x140683700
-AgPointer<AgLeaderboardRankingList>::~AgPointer<AgLeaderboardRankingList>(); // 0x1406837A0
-AgPointer<AgSession>::~AgPointer<AgSession>(); // 0x140681D60
-AgPointer<AgProfile>::~AgPointer<AgProfile>(); // 0x140680550
-AgPointer<AgJsonNodeData>::~AgPointer<AgJsonNodeData>(); // 0x14065A610
-AgPointer<AgServiceEvent>::~AgPointer<AgServiceEvent>(); // 0x140696100
+#include "agpointer.h"
+
+template <typename T>
+AgPointer<T>::AgPointer<T>()
+{
+    m_ref = nullptr;
+    m_ptr = nullptr;
+}
+template <typename T>
+AgPointer<T>::AgPointer<T>(T *t)
+{
+    m_ref = nullptr;
+    m_ptr = nullptr;
+    bool test;
+    if (t)
+    {
+        AgReferenceCount count = new AgReferenceCount;
+        if (static_cast<AgReferencedObject*>(t)->getReferenceCounter())
+        {
+            test = false;
+        }
+        else
+        {
+            test = true;
+            count.incRef;
+            count.incWeakRef;
+            count.setObject(t);
+            static_cast<AgReferencedObject*>(t)->createReferenceCounter(count);
+        }
+        count = static_cast<AgReferencedObject*>(t)->m_refCount;
+        if (!test)
+            count->incRef();
+        m_ref = count;
+        m_ptr = t;
+    }
+}
+template <typename T>
+AgPointer<T>::AgPointer<T>(const AgPointer<T> & rhs)
+{
+    int strongCount = rhs->m_ref->getRefCount();
+    if (strongCount)
+    {
+        while (AgAtomicCompareExchange(&m_ref->getRefCount(), origCount, origCount + 1) != m_strongCount)
+        {
+            strongCount = rhs->m_ref->getRefCount();
+            if (!rhs->m_ref->getRefCount())
+                return;
+        }
+        if ( strongCount != -1 )
+        {
+            m_ref = rhs->m_ref;
+            m_ptr = rhs->m_ptr;
+        }  
+    }
+}
+
 AgPointer<AgSharedInstance<AgMutex> > & AgPointer<AgSharedInstance<AgMutex> >::operator=(AgSharedInstance<AgMutex> * t); // 0x140039A50
 AgPointer<AgAudioChannel> & AgPointer<AgAudioChannel>::operator=(AgAudioChannel * t); // 0x140051260
 AgPointer<AgThread> & AgPointer<AgThread>::operator=(AgThread * t); // 0x140051260

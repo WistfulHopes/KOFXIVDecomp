@@ -1,5 +1,8 @@
 #pragma once
 
+//unused
+
+/*
 struct AgVertexDeclaration
 {
 	AgVertexDeclaration(const AgVertexDeclaration &);
@@ -41,3 +44,4 @@ struct AgVertexDeclaration::Item
 	AgVertexDeclaration::ComponentType m_componentType; // 0xC
 	long m_componentCount; // 0x10
 };
+*/

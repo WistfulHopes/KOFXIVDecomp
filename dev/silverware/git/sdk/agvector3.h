@@ -1,5 +1,7 @@
 #pragma once
 
+#include "agvector2.h"
+
 class AgVector3
 {
 public:

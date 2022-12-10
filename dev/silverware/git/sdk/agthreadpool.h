@@ -1,5 +1,9 @@
 #pragma once
 
+#include "agthread.h"
+#include "agpointer.h"
+#include "agqueue.h"
+
 class AgJobCompletion
 {
 public:
@@ -27,7 +31,7 @@ protected:
 	struct CompleteJobPredicate;
 private:
 	AgQueue<AgThreadPool::Job *> m_completed; // 0x58
-	std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > m_threads; // 0x80
+	std::vector<AgPointer<AgThread>> m_threads; // 0x80
 	AgCondition m_completion; // 0x98
 	volatile long m_jobCount; // 0xD0
 	volatile long m_uniqueJobID; // 0xD4
@@ -133,132 +137,7 @@ struct AgThreadPool::CompleteJobPredicate
 {
 	long operator()(AgThreadPool::Job *);
 };
-class std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > :
-	std::_Vector_alloc<std::_Vec_base_types<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > >
-{
-	class _Myt;
-	class _Mybase;
-	class allocator_type;
-	struct _Alty;
-	class value_type;
-	typedef unsigned long long size_type;
-	typedef long long difference_type;
-	typedef AgPointer<AgThread> pointer;
-	typedef const AgPointer<AgThread> const_pointer;
-	typedef AgPointer<AgThread> reference;
-	typedef const AgPointer<AgThread> const_reference;
-	class iterator;
-	class const_iterator;
-	class reverse_iterator;
-	class const_reverse_iterator;
-public:
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(std::initializer_list<AgPointer<AgThread> >, const std::allocator<AgPointer<AgThread> > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &, const std::allocator<AgPointer<AgThread> > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(const std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &, const std::allocator<AgPointer<AgThread> > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(const std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(unsigned long long, const AgPointer<AgThread> &, const std::allocator<AgPointer<AgThread> > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(unsigned long long, const AgPointer<AgThread> &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(unsigned long long);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >(const std::allocator<AgPointer<AgThread> > &);
-	vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >();
-	void _Construct_n(unsigned long long, const AgPointer<AgThread> *);
-	std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > & operator=(const std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-	std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > & operator=(std::initializer_list<AgPointer<AgThread> >);
-	std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > & operator=(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-	void _Assign_rv(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-	void _Assign_rv(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &, std::integral_constant<bool,0>);
-	void _Assign_rv(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &, std::integral_constant<bool,1>);
-	void push_back(const AgPointer<AgThread> &);
-	void push_back(AgPointer<AgThread> &);
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, unsigned long long, const AgPointer<AgThread> &);
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, const AgPointer<AgThread> &);
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, std::initializer_list<AgPointer<AgThread> >);
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, AgPointer<AgThread> &);
-	void assign(unsigned long long, const AgPointer<AgThread> &);
-	void assign(std::initializer_list<AgPointer<AgThread> >);
-	~vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > >();
-	void reserve(unsigned long long);
-	unsigned long long capacity();
-	unsigned long long _Unused_capacity();
-	unsigned long long _Has_unused_capacity();
-	std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > begin();
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > begin();
-	std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > end();
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > end();
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > _Make_iter(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >);
-	std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > rbegin();
-	std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > rbegin();
-	std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > rend();
-	std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > rend();
-	std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > cbegin();
-	std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > cend();
-	std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > crbegin();
-	std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > > crend();
-	void shrink_to_fit();
-	void resize(unsigned long long, const AgPointer<AgThread> &);
-	void resize(unsigned long long);
-	unsigned long long size();
-	unsigned long long max_size();
-	bool empty();
-	std::allocator<AgPointer<AgThread> > get_allocator();
-	AgPointer<AgThread> & at(unsigned long long);
-	const AgPointer<AgThread> & at(unsigned long long);
-	AgPointer<AgThread> & operator[](unsigned long long);
-	const AgPointer<AgThread> & operator[](unsigned long long);
-	const AgPointer<AgThread> * data();
-	AgPointer<AgThread> * data();
-	const AgPointer<AgThread> & front();
-	AgPointer<AgThread> & front();
-	const AgPointer<AgThread> & back();
-	AgPointer<AgThread> & back();
-	void pop_back();
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >);
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >);
-	void _Pop_back_n(unsigned long long);
-	void clear();
-	void swap(std::vector<AgPointer<AgThread>,std::allocator<AgPointer<AgThread> > > &);
-protected:
-	bool _Buy(unsigned long long);
-	void _Destroy(AgPointer<AgThread> *, AgPointer<AgThread> *);
-	unsigned long long _Grow_to(unsigned long long);
-	bool _Inside(const AgPointer<AgThread> *);
-	void _Reallocate(unsigned long long);
-	void _Reserve(unsigned long long);
-	void _Tidy();
-	std::_Vector_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > > _Insert_n(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<AgPointer<AgThread> > > >, unsigned long long, const AgPointer<AgThread> &);
-	AgPointer<AgThread> * _Ufill(AgPointer<AgThread> *, unsigned long long, const AgPointer<AgThread> *);
-	void _Xlen();
-	void _Xran();
-	void _Orphan_range(AgPointer<AgThread> *, AgPointer<AgThread> *);
-};
-class AgPointer<AgThread>
-{
-public:
-	AgPointer<AgThread>(const AgReference<AgThread> &);
-	AgPointer<AgThread>(AgPointer<AgThread> &);
-	AgPointer<AgThread>(const AgPointer<AgThread> &);
-	AgPointer<AgThread>(AgThread *);
-	AgPointer<AgThread>();
-	~AgPointer<AgThread>();
-	AgPointer<AgThread> & operator=(AgPointer<AgThread> &);
-	AgPointer<AgThread> & operator=(const AgReference<AgThread> &);
-	AgPointer<AgThread> & operator=(const AgPointer<AgThread> &);
-	AgPointer<AgThread> & operator=(AgThread *);
-	bool operator<(const AgPointer<AgThread> &);
-	AgThread * operator->();
-	AgThread & operator*();
-	bool operator==(const AgPointer<AgThread> &);
-	bool operator==(AgThread *);
-	bool operator!=(const AgPointer<AgThread> &);
-	bool operator!=(AgThread *);
-	AgThread * getObject();
-	void swap(AgPointer<AgThread> &);
-private:
-	AgReferenceCount * m_ref; // 0x0
-	AgThread * m_ptr; // 0x8
-};
-unsigned long AgThreadPool::cancelJobs<<lambda_59c28db3580856550501c533fac68ba7> >(AgAudioManagerXAudio2::cancelStreamJob::__l2::<lambda_59c28db3580856550501c533fac68ba7> & p); // 0x140689D40
+//unsigned long AgThreadPool::cancelJobs<<lambda_59c28db3580856550501c533fac68ba7> >(AgAudioManagerXAudio2::cancelStreamJob::__l2::<lambda_59c28db3580856550501c533fac68ba7> & p); // 0x140689D40
 class AgPriorityThreadPool :
 	AgThreadPool
 {

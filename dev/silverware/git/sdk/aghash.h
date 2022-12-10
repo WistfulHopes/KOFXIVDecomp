@@ -1,5 +1,7 @@
 #pragma once
 
+#include "agstringref.h"
+
 class AgHash
 {
 private:

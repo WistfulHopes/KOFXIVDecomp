@@ -23,3 +23,8 @@ private:
 	void * m_data; // 0x8
 	AgReferenceCount & operator=(const AgReferenceCount &);
 };
+
+unsigned int AgAtomicCompareExchange(volatile int *value, int compare, int exchange)
+{
+  return (unsigned int)_InterlockedCompareExchange((volatile long*)value, exchange, compare);
+}

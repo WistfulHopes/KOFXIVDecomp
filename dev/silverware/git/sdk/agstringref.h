@@ -1,5 +1,9 @@
 #pragma once
 
+#include <string>
+
+class AgString;
+
 class AgStringRef
 {
 public:
